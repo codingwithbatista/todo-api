@@ -8,6 +8,15 @@ __engine = create_engine(__database_settings.get_url_connection())
 __base = declarative_base()
 
 
+def get_base():
+    return __base
+
+def get_engine():
+    return __engine
+
+def get_session():
+    return
+
 def create_tables():
     __base.metadata.create_all(__engine)
 
