@@ -1,10 +1,11 @@
 from fastapi import FastAPI
-from models.models import Todo, create_tables
-from repositories.todo_repository import TodoRepository
+from models import create_tables
 from resources.todo_resource import todo_resource
+from resources.auth_resource import auth_resource
 
 app = FastAPI()
 app.include_router(todo_resource)
+app.include_router(auth_resource)
 create_tables()
 
 

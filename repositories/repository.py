@@ -1,10 +1,10 @@
-from models.models import get_base, get_engine
+from models import engine
 from sqlalchemy.orm import Session
 
 class Repository:
 
     def get_session(self):
-        session = Session(bind=get_engine())
+        session = Session(bind=engine)
         return session
 
     def insert(self, data):

@@ -1,3 +1,6 @@
+secure:
+  secret_key: c187ee92a77c29875b96eec7c9e79e052e61d933ee17c56444e20c8a101614c7
+  algorithm: "HS256"
 database:
   user: postgres
   password: root

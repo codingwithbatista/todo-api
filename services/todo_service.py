@@ -1,4 +1,4 @@
-from models.models import Todo
+from models.to_do import Todo
 from models.response.todo_response import TodoResponse
 from repositories.todo_repository import TodoRepository
 

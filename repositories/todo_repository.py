@@ -1,6 +1,6 @@
 from typing import override
 from repositories.repository import Repository
-from models.models import Todo
+from models.to_do import Todo
 
 class TodoRepository(Repository):
 
